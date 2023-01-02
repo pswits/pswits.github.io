@@ -242,16 +242,6 @@ function calculateDistance($clientLocation, $serverLocation, $unit)
 
         return $dist.' mi';
     }
-
-    if ('km' === $unit) {
-        $dist = round($dist, -1);
-        if ($dist < 20) {
-            $dist = '<20';
-        }
-
-        return $dist.' km';
-    }
-
     return null;
 }
 
